@@ -1,0 +1,102 @@
+# ============================================================
+#  IFEats — .gitignore para projetos SQL Server / SSMS
+# ============================================================
+
+
+# ------------------------------------------------------------------
+# SQL Server Management Studio (SSMS)
+# ------------------------------------------------------------------
+
+# Arquivos de projeto e solução do SSMS
+*.ssmssqlproj
+*.ssmssln
+*.suo
+*.user
+
+# Planos de execução exportados
+*.sqlplan
+
+# Resultados de query exportados pelo SSMS
+*.rpt
+
+
+# ------------------------------------------------------------------
+# SQL Server Data Tools (SSDT / Visual Studio)
+# ------------------------------------------------------------------
+
+*.dacpac
+*.bacpac
+*.publish.xml
+bin/
+obj/
+
+
+# ------------------------------------------------------------------
+# Arquivos de Backup — manter apenas o .bak versionado
+# ------------------------------------------------------------------
+
+# Backups de transaction log (gerados automaticamente)
+*.trn
+
+# Backups diferenciais temporários
+*_diff.bak
+*_temp.bak
+*_old.bak
+
+# Snapshots de banco de dados
+*.ss
+
+
+# ------------------------------------------------------------------
+# Arquivos de dados do SQL Server (nunca versionar)
+# ------------------------------------------------------------------
+
+*.mdf
+*.ldf
+*.ndf
+
+
+# ------------------------------------------------------------------
+# Sistema Operacional
+# ------------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS (caso algum colaborador use Mac + Azure Data Studio)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# ------------------------------------------------------------------
+# Editores e IDEs
+# ------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.vssscc
+*.vspscc
+
+# Azure Data Studio
+*.azdatasession
+
+
+# ------------------------------------------------------------------
+# Logs e temporários gerais
+# ------------------------------------------------------------------
+
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
